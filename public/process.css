@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* Navigation */
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  width: 100vw;
+  margin-top: 0;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+#logo {
+  width: 12vw;
+}
+/* End of Navigation */
+
+#project-overview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 3%;
+}
+#left-col,
+#right-col {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+#left-col {
+  border-right: 5px solid black;
+}
+div {
+  border-top: 5px solid black;
+}
+h2 {
+  color: #4e639e;
+}
+h4 {
+  width: 40vw;
+}
+#moodboard {
+  max-width: 20vw;
+  width: 100%;
+  height: auto;
+}
