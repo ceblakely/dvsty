@@ -10,6 +10,12 @@ app.use(express.static(path.join(__dirname, "static/images")));
 app.get("/", (req, res) => {
   res.render("home");
 });
+app.get("/consign", (req, res) => {
+  res.render("consign");
+});
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
 app.get("/process", (req, res) => {
   res.render("process");
 });

@@ -2,22 +2,25 @@
 <head>
     <link rel="stylesheet" type="text/css" href="home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <%- include('../partials/navigation.ejs') %>
-    <div id="intro">
-        <img id="img-1" src="dvsty-imgs/dvsty17.jpg">
-        <div>
-            <img id='img-2' src="dvsty-imgs/dvsty18.jpg">
-            <h2>Vintage & Luxury Consignment Like You've Never Seen Before</h2>
-            <h4>Shop New Arrivals</h4>
+    <div id="introDiv">
+        <img id='img-1' src="dvsty-imgs/dvsty18.jpg"> 
+        <div id="col2">
+            <div>
+                <h2>Vintage & Luxury Consignment Like You've Never Seen Before</h2>
+                <button><a href="">Shop New Arrivals</a></button>
+            </div>
+            <img id='img-2' src="dvsty-imgs/dvsty1.jpg"> 
+         </div>    
         </div>
-    </div>
-   
-    <div>
         
         <div id="aboutDiv">
-            <img class='oneImg' src="dvsty-imgs/dvsty1.jpg">
+            <img class='oneImg' src="dvsty-imgs/dvsty17.jpg">
             <div>
             <h2>Boston's Premiere Consignment Experience</h2>
             <p>Located in the heart of Jamaica Plain on bustling Centre St. DVSTY is a community oriented consignment shop featuring curated men's, women's and unisex clothing, vinyl records, instruments and local artisan pieces. <br>
@@ -25,7 +28,7 @@
             DVSTY is a must-see location in Boston and we have something for everyone, no matter who you are or what you’re looking for. Come to DVSTY if you’re ready for a different consignment experience.</p>
         </div>
         </div>
-    </div>
+ 
 
     <div id="shopDiv">
         <h2>Shop Our Selection</h2>
@@ -33,21 +36,21 @@
         <div id="shop">
             <div id="shopRow1">
                 <figure>
-                    <img src="dvsty-imgs/dvsty9.jpg">
+                    <a title='Shop Mens' href=''><img src="dvsty-imgs/dvsty9.jpg"></a>
                     <figcaption><a href=''>Mens</a></figcaption>
                 </figure>
                 <figure>
-                    <img src="dvsty-imgs/dvsty15.jpg">
+                    <a title='Shop Womens' href=''><img src="dvsty-imgs/dvsty15.jpg"></a>
                     <figcaption><a href=''>Womens</a></figcaption>
                 </figure>
             </div>
             <div id="shopRow2">
                 <figure>
-                    <img src="dvsty-imgs/dvsty7.jpg">
+                    <a title='Shop Art & Music' href=''><img src="dvsty-imgs/dvsty7.jpg"></a>
                     <figcaption><a href=''>Art & Music</a></figcaption>
                 </figure>
                 <figure>
-                    <img src="dvsty-imgs/dvsty21.jpg">
+                    <a title='Shop the Sales' href=''><img src="dvsty-imgs/dvsty5.jpg"></a>
                     <figcaption><a href=''>Sale</a></figcaption>
                 </figure>
             </div>
@@ -55,32 +58,30 @@
     </div>
 
     <div id="consignDiv">
-        <div>
-            <h2>Interested in Consigning With Us?</h2>
-            <p>Do you have pre-loved clothing that you are ready to let go of and want to make some extra cash? We’d love to chat with you!<br><br>We offer additional discounts and cash back for your vintage or luxury items, music, and artwork. Click below for details.</p>
-            <button>Learn More</button>
-        </div>
-        <img class='oneImg' src="dvsty-imgs/dvsty12.jpg">
+            <img src='dvsty-imgs/dvsty2.jpg'>
+            <div id="consignText">
+                <h2>Interested in Consigning With Us?</h2>
+                <p>Do you have pre-loved clothing that you are ready to let go of and want to make some extra cash? We’d love to chat with you!<br><br>We offer additional discounts and cash back for your vintage or luxury items, music, and artwork. Click below for details.</p>
+                <button><a href=''>Learn More</a></button>
+            </div>
+            <img src="dvsty-imgs/dvsty12.jpg">
     </div>
 
     <div id="saleDiv">
-        <img class='oneImg' src="dvsty-imgs/dvsty16.jpg">
-        <div>
         <h2>30% Off Blue Tag Items</h2>
         <p>We have blue tags on vintage clothing, art, and music! Shop now before the sale ends.</p>
         <button><a href=''>Shop Sale Items</a></button>
-        </div>
     </div>
 
     <div id="bpsDiv">
-        <img src="dvsty-imgs/bps.jpg">
+        <img class='oneImg' src="dvsty-imgs/bps.jpg">
         <p>10% of Sunday’s sales go to support BPS Art Expansion to help expand quality arts education within Boston Public Schools.<br>
-            Thank you for shopping locally and supporting your community!</p>
+        Thank you for shopping locally and supporting your community!</p>
     </div>
     
     <div id="photoshootDiv">
-        <h2>Interested in Modeling for DVSTY?</h2>
-       <div id="photoshootImgs">
+        <h2>Want to Model for DVSTY?</h2>
+        <div id="photoshootImgs">
             <img src="dvsty-imgs/dvsty14.jpg">
             <img src="dvsty-imgs/dvsty11.jpg">
             <img src="dvsty-imgs/dvsty13.jpg">
@@ -89,5 +90,13 @@
         <button><a href=''>Schedule Your Photoshoot</a></button>
     </div>
 
+    <div id="emailDiv">
+        <h2>Want to Be the First to Know When a Sale Drops?</h2>
+        <p>We’ll let you know about the newest sales on all vintage, luxury, art, and music. Don’t miss out!</p>
+        <input id='emailInput' placeholder="Enter Your Email Address Here">
+        <input id='submitBtn' type="submit" value="Submit">
+    </div>
+
+    <%- include('../partials/footer.ejs') %>
 </body>
 </html>
