@@ -4,41 +4,6 @@
     padding: 0;
     overflow-x: hidden;
   }
-  .logo {
-    width: 200px;
-    max-width: 100%;
-    height: auto;
-  }
-
-  #menuIcon {
-    display: block;
-    width: 5vw;
-    padding-right: 2%;
-  }
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-  }
-  nav li {
-    display: none;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    padding-bottom: 2%;
-  }
-  #info h5 {
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-    color: white;
-  }
   #contactDiv {
     display: flex;
     flex-direction: column-reverse;
@@ -108,33 +73,6 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  footer {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  nav li {
-    display: block;
-    font-size: 17px;
-    font-family: "Raleway", sans-serif;
-    padding-right: 2%;
-  }
-  nav li a {
-    border: 2px solid black;
-    color: white;
-    text-decoration: none;
-    padding: 10%;
-  }
-  nav li a:hover {
-    border: 2px solid white;
-    border-radius: 2.5px;
-    padding: 10%;
-  }
-  #menuIcon {
-    display: none;
-  }
   #contactDiv {
     display: flex;
     flex-direction: row;
