@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="navFooter.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,6 +9,7 @@
 </head>
 <body>
     <%- include('../partials/navigation.ejs') %>
+    <%- include('../partials/mobileNav.ejs') %>
     <div id="introDiv">
         <img id='img-1' src="dvsty-imgs/dvsty18.jpg"> 
         <div id="col2">
@@ -23,7 +25,7 @@
             <img class='oneImg' src="dvsty-imgs/dvsty17.jpg">
             <div>
             <h2>Boston's Premiere Consignment Experience</h2>
-            <p>Located in the heart of Jamaica Plain on bustling Centre St. DVSTY is a community oriented consignment shop featuring curated men's, women's and unisex clothing, vinyl records, instruments and local artisan pieces. <br>
+            <p><br>Located in the heart of Jamaica Plain on bustling Centre St. DVSTY is a community oriented consignment shop featuring curated men's, women's and unisex clothing, vinyl records, instruments and local artisan pieces. <br>
                 <br>
             DVSTY is a must-see location in Boston and we have something for everyone, no matter who you are or what you’re looking for. Come to DVSTY if you’re ready for a different consignment experience.</p>
         </div>
@@ -98,5 +100,6 @@
     </div>
 
     <%- include('../partials/footer.ejs') %>
+    <script src='main.js'></script>
 </body>
 </html>
