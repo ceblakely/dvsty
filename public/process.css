@@ -86,6 +86,11 @@ iframe {
 }
 #homeMockup {
   display: flex;
+  flex-direction: column;
+}
+#homeDesktop,
+#homeMobile {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
@@ -94,7 +99,13 @@ iframe {
   height: 80vh;
 }
 .desktopMockup {
-  max-width: 24vw;
+  max-width: 22vw;
+  width: 100%;
+  height: auto;
+  padding: 2%;
+}
+.mobileMockup {
+  max-width: 20vw;
   width: 100%;
   height: auto;
   padding: 2%;
