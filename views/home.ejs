@@ -10,12 +10,13 @@
 <body>
     <%- include('../partials/navigation.ejs') %>
     <%- include('../partials/mobileNav.ejs') %>
+    <%- include('../partials/modal.ejs') %>
     <div id="introDiv">
         <img id='img-1' src="dvsty-imgs/dvsty18.jpg"> 
         <div id="col2">
             <div>
                 <h2>Vintage & Luxury Consignment Like You've Never Seen Before</h2>
-                <button><a href="">Shop New Arrivals</a></button>
+                <button onclick="openModal()"><a href="">Shop New Arrivals</a></button>
             </div>
             <img id='img-2' src="dvsty-imgs/dvsty1.jpg"> 
          </div>    
@@ -39,7 +40,7 @@
             <div id="shopRow1">
                 <figure>
                     <a title='Shop Mens' href=''><img src="dvsty-imgs/dvsty9.jpg"></a>
-                    <figcaption><a href=''>Mens</a></figcaption>
+                    <figcaption onclick="openModal(e)"><a href=''>Mens</a></figcaption>
                 </figure>
                 <figure>
                     <a title='Shop Womens' href=''><img src="dvsty-imgs/dvsty15.jpg"></a>
