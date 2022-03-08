@@ -7,22 +7,22 @@
 </head>
 <body>
     <div id="mainDiv">
-        <div id="project-overview">
+        <div id="projectOverview">
             <!-- <img id='moodboard' src="DVSTY Moodboard.png"> -->
             <div id="problem">
                 <h2>The Problem</h2>
                 <h4>DVSTY’s current website does not adequately communicate the brand’s identity or desired messaging to its target audience as being Boston’s most unique consignment shop for luxury and vintage clothes, music, art. The current website does not reinforce the brand aesthetic that is being pushed through other channels, such as social media posts or advertising. The generic nature of DVSTY's current is working against the company's goal of becoming a well-established, must-see location in Boston for vintage and luxury enthusiasts. 
                 </h4>
-                <section id="currentWebsite">
-                    <section>
+                <div id="currentWebsite">
+                    <div>
                         <img src="dvsty-imgs/old-home.png">
                         <img src="dvsty-imgs/old-consign.png">
-                    </section>
-                    <section>
+                    </div>
+                    <div>
                         <img src="dvsty-imgs/old-gallery.png">
                         <img src="dvsty-imgs/old-contact.png">
-                    </section>
-                </section>
+                    </div>
+                </div>
             </div>
 
             <div id="objective">
@@ -56,37 +56,74 @@
             <div id="userPersonas">
                 <h2>User Personas</h2>
                 <h4>To narrow in on our target even further, we need to understand the underlying beliefs and behaviors of our target in order to better connect to them.</h4>
-                <section id="personas">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FqpCVK1HuYkrbmZm0Z2Coad%2FDVSTY-User-Persona-1%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
-                </section>
+                <div id="personasContainer">
+                    <div class="userSlide fade">
+                        <iframe class='userPersona' style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FqpCVK1HuYkrbmZm0Z2Coad%2FDVSTY-User-Persona-1%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+                        <p class="userText">User 1</p>
+                    </div>
+                    <div class="userSlide fade">
+                        <iframe class='userPersona' style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBfqVvWHu67tCKx4oHGHQrP%2FDVSTY-User-Persona-2%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+                        <p class="userText">User 2</p>
+                    </div>
+                    <div class="userSlide fade">
+                        <iframe class='userPersona' style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2ZOqK08Tt4g4Fwk0BWy59k%2FDVSTY-User-Persona-3%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+                        <p class="userText">User 3</p>
+                    </div>
+                    <a class="backBtn" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="nextBtn" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
             
-            <div id="ui">
+            <div id="uiProcess">
                 <h2>User Interface Development Process</h2>
                 <h4>The design for DVSTY's website needed to match the edgy and artsy vibe that can be seen inside the store, as well as on TikTok, Instagram, and Facebook. The website needed to be designed to strategically cater to the needs of the target audience, but it was necessary to start this process by narrowing down the basic elements the website needed to include.<br><br></h4>
-                <section id="homeMockup">
-                    <section id="homeDesktop">
+                <div id="homeMockup">
+                    <h3>Home Desktop Interface</h3>
+                    <div id="homeDesktop">
                         <img class="desktopMockup" src="dvsty-imgs/Home -- MacBook Pro 16_ - 1.png">
                         <img class="desktopMockup" src="dvsty-imgs/Home High-Level -- MacBook Pro 16_ - 2.png">
-                        <img class='desktopMockup' src="dvsty-imgs/Home Completed-- MacBook Pro 16_ - 3 (1).png">
-                    </section>
-                    <section id="homeMobile">
+                        <img class='desktopMockup' src="dvsty-imgs/Home Completed-- MacBook Pro 16_ - 3 (3).png">
+                    </div>
+                    <h3>Home Mobile Interface</h3>
+                    <div id="homeMobile">
                         <img class='mobileMockup' src="dvsty-imgs/Home -- iPhone 13 Pro Max - 1.png">
                         <img class='mobileMockup' src="dvsty-imgs/Home -- iPhone 13 Pro Max - 2.png">
-                        <img class='mobileMockup' src="dvsty-imgs/Home -- iPhone 13 Pro Max - 3.png">
-                    </section>
-                    
-                </section>
-                <section id="consignMockup">
-                    <img class='desktopMockup' src="dvsty-imgs/Consign -- MacBook Pro 16_ - 1.png">
-                </section>
-                <section id="contactMockup">
-                    <img class='desktopMockup' src="dvsty-imgs/Contact -- MacBook Pro 16_ - 2.png">
-                </section>
-                
-            </div>
-            <div id="hi">
-                <h1>hey girl</h1>
+                        <img class='mobileMockup' src="dvsty-imgs/Home -- iPhone 13 Pro Max - 3 (3).png">
+                    </div>
+                </div>
+                <div id="consignMockup">
+                    <h3>Consignment Desktop Interface</h3>
+                    <div id="consignDesktop">
+                        <img class='desktopMockup' src="dvsty-imgs/Consign -- MacBook Pro 16_ - 1 (1).png">
+                        <img class='desktopMockup' src="dvsty-imgs/Consign -- MacBook Pro 16_ - 2.png">
+                        <img class='desktopMockup' src="dvsty-imgs/Consign -- MacBook Pro 16_ - 3.png">
+                    </div>
+                    <h3>Consignment Mobile Interface</h3>
+                    <div id="consignMobile">
+                        <img class='mobileMockup' src="dvsty-imgs/Consign -- iPhone 13 Pro Max - 1.png">
+                        <img class='mobileMockup' src="dvsty-imgs/Consign -- iPhone 13 Pro Max - 2.png">
+                        <img class='mobileMockup' src="dvsty-imgs/Consign -- iPhone 13 Pro Max - 3.png">
+                    </div>
+                </div>
+                <div id="contactMockup">
+                    <h3>Contact Dekstop Interface</h3>
+                    <div id="contactDesktop">
+                        <img class='desktopMockup' src="dvsty-imgs/Contact -- MacBook Pro 16_ - 2.png">
+                        <img class='desktopMockup' src="dvsty-imgs/Contact -- MacBook Pro 16_ - 3.png">
+                        <img class='desktopMockup' src="dvsty-imgs/Contact -- MacBook Pro 16_ - 4.png">
+                    </div>
+                    <h3>Contact Mobile Interface</h3>
+                    <div id="contactMobile">
+                        <img class='mobileMockup' src="dvsty-imgs/Contact -- iPhone 13 Pro Max - 2.png">
+                        <img class='mobileMockup' src="dvsty-imgs/Contact -- iPhone 13 Pro Max - 3.png">
+                        <img class='mobileMockup' src="dvsty-imgs/Contact -- iPhone 13 Pro Max - 4.png">
+                    </div>
+                </div>
             </div>
        </div>
 
@@ -100,6 +137,7 @@
             <h3>Link to blakelydigitalco</h3>
         </div>
     </div>
+    <script src="process.js"></script>
 </body>
 <footer></footer>
 </html>
