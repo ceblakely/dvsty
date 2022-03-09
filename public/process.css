@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 /* Navigation */
 #navigation {
@@ -115,9 +116,9 @@ ol li {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: red;
+  color: #4e639e;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 40px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -130,11 +131,13 @@ ol li {
 .dot:hover {
   background-color: #717171;
 }
+
 .userPersona {
   max-width: 70vw;
   width: 100%;
   height: 90vh;
 }
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;

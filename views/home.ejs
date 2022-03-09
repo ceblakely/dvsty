@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="navFooter.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
         <div id="col2">
             <div>
                 <h2>Vintage & Luxury Consignment Like You've Never Seen Before</h2>
-                <button onclick="openModal()"><a href="">Shop New Arrivals</a></button>
+                <button onclick="openModal(event)"><a href="">Shop New Arrivals</a></button>
             </div>
             <img id='img-2' src="dvsty-imgs/dvsty1.jpg"> 
          </div>    
@@ -40,21 +41,21 @@
             <div id="shopRow1">
                 <figure>
                     <a title='Shop Mens' href=''><img src="dvsty-imgs/dvsty9.jpg"></a>
-                    <figcaption onclick="openModal(e)"><a href=''>Mens</a></figcaption>
+                    <figcaption onclick="openModal(event)"><a href=''>Mens</a></figcaption>
                 </figure>
                 <figure>
                     <a title='Shop Womens' href=''><img src="dvsty-imgs/dvsty15.jpg"></a>
-                    <figcaption><a href=''>Womens</a></figcaption>
+                    <figcaption onclick="openModal(event)"><a href=''>Womens</a></figcaption>
                 </figure>
             </div>
             <div id="shopRow2">
                 <figure>
                     <a title='Shop Art & Music' href=''><img src="dvsty-imgs/dvsty7.jpg"></a>
-                    <figcaption><a href=''>Art & Music</a></figcaption>
+                    <figcaption onclick="openModal(event)"><a href=''>Art & Music</a></figcaption>
                 </figure>
                 <figure>
                     <a title='Shop the Sales' href=''><img src="dvsty-imgs/dvsty5.jpg"></a>
-                    <figcaption><a href=''>Sale</a></figcaption>
+                    <figcaption onclick="openModal(event)"><a href=''>Sale</a></figcaption>
                 </figure>
             </div>
             </div>
@@ -65,7 +66,7 @@
             <div id="consignText">
                 <h2>Interested in Consigning With Us?</h2>
                 <p>Do you have pre-loved clothing that you are ready to let go of and want to make some extra cash? We’d love to chat with you!<br><br>We offer additional discounts and cash back for your vintage or luxury items, music, and artwork. Click below for details.</p>
-                <button><a href=''>Learn More</a></button>
+                <button onclick="openModal(event)"><a href=''>Learn More</a></button>
             </div>
             <img src="dvsty-imgs/dvsty12.jpg">
     </div>
@@ -73,7 +74,7 @@
     <div id="saleDiv">
         <h2>30% Off Blue Tag Items</h2>
         <p>We have blue tags on vintage clothing, art, and music! Shop now before the sale ends.</p>
-        <button><a href=''>Shop Sale Items</a></button>
+        <button onclick="openModal(event)"><a href=''>Shop Sale Items</a></button>
     </div>
 
     <div id="bpsDiv">
@@ -90,14 +91,14 @@
             <img src="dvsty-imgs/dvsty13.jpg">
         </div>
         <p>Schedule a photoshoot with us to model some of our vintage and luxury items. Just tag us @dvstyconsign and you’ll get a 10% off discount on your next purchase!</p>
-        <button><a href=''>Schedule Your Photoshoot</a></button>
+        <button><a href='/contact'>Schedule Your Photoshoot</a></button>
     </div>
 
     <div id="emailDiv">
         <h2>Want to Be the First to Know When a Sale Drops?</h2>
         <p>We’ll let you know about the newest sales on all vintage, luxury, art, and music. Don’t miss out!</p>
         <input id='emailInput' placeholder="Enter Your Email Address Here">
-        <input id='submitBtn' type="submit" value="Submit">
+        <input onclick="openModal(event)" id='submitBtn' type="submit" value="Submit">
     </div>
 
     <%- include('../partials/footer.ejs') %>
