@@ -2,6 +2,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="contact.css" />
   <link rel="stylesheet" type="text/css" href="navFooter.css" />
+  <link rel="stylesheet" type="text/css" href="modal.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -10,7 +11,9 @@
   />
 </head>
 <body>
-  <%- include('../partials/navigation.ejs') %>
+  <%- include('../partials/navigation.ejs') %> <%-
+  include('../partials/mobileNav.ejs') %> <%- include('../partials/modal.ejs')
+  %>
   <div id="contactDiv">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.4637278944206!2d-71.11684438454526!3d42.311306979190206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3796e9b700965%3A0xcac46a8c79d22ab8!2s713%20Centre%20St%2C%20Jamaica%20Plain%2C%20MA%2002130!5e0!3m2!1sen!2sus!4v1645989900122!5m2!1sen!2sus"
@@ -32,7 +35,13 @@
         <input type="email" name="Email" id="email" required />
         <label for="inquiry">Enter inquiry below: </label>
         <input type="text" name="Customer Inquiry" id="inquiry" required />
-        <input id="submitBtn" type="submit" value="Submit" required />
+        <input
+          onclick="openModal(event)"
+          id="submitBtn"
+          type="submit"
+          value="Submit"
+          required
+        />
       </form>
     </div>
   </div>
@@ -43,8 +52,9 @@
       We have blue tags on vintage clothing, art, and music! Grab these rare
       pieces while they last.
     </p>
-    <button><a href="">Shop Sale Items</a></button>
+    <button onclick="openModal(event)"><a href="">Shop Sale Items</a></button>
   </div>
 
   <%- include('../partials/footer.ejs') %>
+  <script src="main.js"></script>
 </body>
