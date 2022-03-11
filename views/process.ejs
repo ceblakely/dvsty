@@ -72,60 +72,75 @@
                         <iframe class='userPersona' style="border: 1px solid rgba(0, 0, 0, 0.1);"src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2ZOqK08Tt4g4Fwk0BWy59k%2FDVSTY-User-Persona-3%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
                         <p class="userText">User 3</p>
                     </div>
-                    <a class="backBtn" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="nextBtn" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="user backBtn" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="user nextBtn" onclick="plusSlides(1)">&#10095;</a>
                 </div>
                 <div>
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="userDot" onclick="currentSlide(1)"></span>
+                    <span class="userDot" onclick="currentSlide(2)"></span>
+                    <span class="userDot" onclick="currentSlide(3, this)"></span>
                 </div>
             </div>
             
             <div id="uiProcess">
                 <h2>User Interface Development Process</h2>
                 <h4>The design for DVSTY's website needed to match the edgy and artsy vibe that can be seen inside the store, as well as on TikTok, Instagram, and Facebook. The website needed to be designed to strategically cater to the needs of the target audience, but it was necessary to start this process by narrowing down the basic elements the website needed to include.<br><br></h4>
-                <div id="homeMockup">
-                    <h3>Home Desktop Interface</h3>
-                    <div id="homeDesktop">
-                        <img class="desktopMockup" src="dvsty-imgs/Home -- MacBook Pro 16_ - 1.png">
-                        <img class="desktopMockup" src="dvsty-imgs/Home High-Level -- MacBook Pro 16_ - 2.png">
-                        <img class='desktopMockup' src="dvsty-imgs/Home Completed-- MacBook Pro 16_ - 3 (3).png">
+                <div id="mockupsContainer">
+                    <div class="mockupSlide fade">
+                        <h3>Home Desktop Interface</h3>
+                        <div class="mockupRow">
+                            <img class="desktopMockup" src="dvsty-imgs/Home -- MacBook Pro 16_ - 1.png">
+                            <img class="desktopMockup" src="dvsty-imgs/Home High-Level -- MacBook Pro 16_ - 2.png">
+                            <img class='desktopMockup' src="dvsty-imgs/Home Completed-- MacBook Pro 16_ - 3 (3).png">
+                        </div>
                     </div>
-                    <h3>Home Mobile Interface</h3>
-                    <div id="homeMobile">
-                        <img class='mobileMockup' src="dvsty-imgs/Home -- iPhone 13 Pro Max - 1.png">
-                        <img class='mobileMockup' src="dvsty-imgs/Home -- iPhone 13 Pro Max - 2.png">
-                        <img class='mobileMockup' src="dvsty-imgs/Home -- iPhone 13 Pro Max - 3 (3).png">
+                    <div class="mockupSlide fade">
+                        <h3>Home Mobile Interface</h3>
+                        <div class="mockupRow">
+                            <img class='mobileMockup' src="dvsty-imgs/Home -- iPhone 13 Pro Max - 1.png">
+                            <img class='mobileMockup' src="dvsty-imgs/Home -- iPhone 13 Pro Max - 2.png">
+                            <img class='mobileMockup' src="dvsty-imgs/Home -- iPhone 13 Pro Max - 3 (3).png">
+                        </div>
                     </div>
+                    <div class="mockupSlide fade">
+                        <h3>Consignment Desktop Interface</h3>
+                        <div class="mockupRow">
+                            <img class='desktopMockup' src="dvsty-imgs/Consign -- MacBook Pro 16_ - 1 (1).png">
+                            <img class='desktopMockup' src="dvsty-imgs/Consign -- MacBook Pro 16_ - 2.png">
+                            <img class='desktopMockup' src="dvsty-imgs/Consign -- MacBook Pro 16_ - 3.png">
+                        </div> 
+                    </div>
+                    <div class="mockupSlide fade">
+                        <h3>Consignment Mobile Interface</h3>
+                        <div class="mockupRow">
+                            <img class='mobileMockup' src="dvsty-imgs/Consign -- iPhone 13 Pro Max - 1.png">
+                            <img class='mobileMockup' src="dvsty-imgs/Consign -- iPhone 13 Pro Max - 2.png">
+                            <img class='mobileMockup' src="dvsty-imgs/Consign -- iPhone 13 Pro Max - 3.png">
+                        </div>
+                    </div>
+                    <div class="mockupSlide fade">
+                        <h3>Contact Desktop Interface</h3>
+                        <div class="mockupRow">
+                            <img class='desktopMockup' src="dvsty-imgs/Contact -- MacBook Pro 16_ - 2.png">
+                            <img class='desktopMockup' src="dvsty-imgs/Contact -- MacBook Pro 16_ - 3.png">
+                            <img class='desktopMockup' src="dvsty-imgs/Contact -- MacBook Pro 16_ - 4.png">
+                        </div>
+                    </div>
+                    <div class="mockupSlide fade">
+                        <h3>Contact Mobile Interface</h3>
+                        <div class="mockupRow">
+                            <img class='mobileMockup' src="dvsty-imgs/Contact -- iPhone 13 Pro Max - 2.png">
+                            <img class='mobileMockup' src="dvsty-imgs/Contact -- iPhone 13 Pro Max - 3.png">
+                            <img class='mobileMockup' src="dvsty-imgs/Contact -- iPhone 13 Pro Max - 4.png">
+                        </div>
+                    </div>
+                    <a class="backBtn" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="nextBtn" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-                <div id="consignMockup">
-                    <h3>Consignment Desktop Interface</h3>
-                    <div id="consignDesktop">
-                        <img class='desktopMockup' src="dvsty-imgs/Consign -- MacBook Pro 16_ - 1 (1).png">
-                        <img class='desktopMockup' src="dvsty-imgs/Consign -- MacBook Pro 16_ - 2.png">
-                        <img class='desktopMockup' src="dvsty-imgs/Consign -- MacBook Pro 16_ - 3.png">
-                    </div>
-                    <h3>Consignment Mobile Interface</h3>
-                    <div id="consignMobile">
-                        <img class='mobileMockup' src="dvsty-imgs/Consign -- iPhone 13 Pro Max - 1.png">
-                        <img class='mobileMockup' src="dvsty-imgs/Consign -- iPhone 13 Pro Max - 2.png">
-                        <img class='mobileMockup' src="dvsty-imgs/Consign -- iPhone 13 Pro Max - 3.png">
-                    </div>
-                </div>
-                <div id="contactMockup">
-                    <h3>Contact Dekstop Interface</h3>
-                    <div id="contactDesktop">
-                        <img class='desktopMockup' src="dvsty-imgs/Contact -- MacBook Pro 16_ - 2.png">
-                        <img class='desktopMockup' src="dvsty-imgs/Contact -- MacBook Pro 16_ - 3.png">
-                        <img class='desktopMockup' src="dvsty-imgs/Contact -- MacBook Pro 16_ - 4.png">
-                    </div>
-                    <h3>Contact Mobile Interface</h3>
-                    <div id="contactMobile">
-                        <img class='mobileMockup' src="dvsty-imgs/Contact -- iPhone 13 Pro Max - 2.png">
-                        <img class='mobileMockup' src="dvsty-imgs/Contact -- iPhone 13 Pro Max - 3.png">
-                        <img class='mobileMockup' src="dvsty-imgs/Contact -- iPhone 13 Pro Max - 4.png">
-                    </div>
+                <div>
+                    <span class="mockupDot" onclick="currentSlide(1)"></span>
+                    <span class="mockupDot" onclick="currentSlide(2)"></span>
+                    <span class="mockupDot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
        </div>
