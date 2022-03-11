@@ -91,14 +91,16 @@ ol li {
   height: auto;
   border: 5px solid black;
 }
-#personasContainer {
+#personasContainer,
+#mockupsContainer {
   position: relative;
   margin: 0;
 }
-.userSlide {
+.userSlide,
+.mockupSlide {
   display: none;
 }
-.dot {
+.userDot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -128,12 +130,18 @@ ol li {
   border-radius: 3px 0 0 3px;
 }
 .active,
-.dot:hover {
+.userDot:hover {
   background-color: #717171;
 }
-
-.userPersona {
-  max-width: 70vw;
+.mockupRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.userPersona,
+.desktopMockup {
+  max-width: 50vw;
   width: 100%;
   height: 90vh;
 }
@@ -160,10 +168,8 @@ ol li {
     opacity: 1;
   }
 }
-#homeMockup {
-  display: flex;
-  flex-direction: column;
-}
+
+/*
 #homeDesktop,
 #homeMobile,
 #consignDesktop,
@@ -174,10 +180,11 @@ ol li {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-}
+} */
 #moodboard {
   height: 80vh;
 }
+/*
 .desktopMockup {
   max-width: 22vw;
   width: 100%;
@@ -190,3 +197,4 @@ ol li {
   height: auto;
   padding: 2%;
 }
+*/
