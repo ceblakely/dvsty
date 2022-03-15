@@ -6,12 +6,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id='navigation'>
+        <img id='logo' src="dvsty-imgs/Cropped Logo.png" />
+       
+            <li><a href='#ux-process'>UX Process</a></li>
+            <li><a href='#uiProcess'>UI Process</a></li>
+            <li><a href='/'>Final Project</a></li>
+       
+    </div>
+</div>
     <div id="mainDiv">
         <div id="projectOverview">
-            <!-- <img id='moodboard' src="DVSTY Moodboard.png"> -->
-            <div id="problem">
-                <h2>The Problem</h2>
-                <h4>DVSTY’s current website does not adequately communicate the brand’s identity or desired messaging to its target audience as being Boston’s most unique consignment shop for luxury and vintage clothes, music, art. The current website does not reinforce the brand aesthetic that is being pushed through other channels, such as social media posts or advertising. The generic nature of DVSTY's current is working against the company's goal of becoming a well-established, must-see location in Boston for vintage and luxury enthusiasts. 
+            <div id="uxProcess">
+                <h2>User Experience Development Process</h2>
+                <h4>The Problem: DVSTY’s current website does not adequately communicate the brand’s identity or desired messaging to its target audience as being Boston’s most unique consignment shop for luxury and vintage clothes, music, art. The current website does not reinforce the brand aesthetic that is being pushed through other channels, such as social media posts or advertising. The generic nature of DVSTY's current is working against the company's goal of becoming a well-established, must-see location in Boston for vintage and luxury enthusiasts. 
                 </h4>
                 <div id="currentWebsite">
                     <div>
@@ -57,28 +65,28 @@
                 <h2>User Personas</h2>
                 <h4>To narrow in on our target even further, we need to understand the underlying beliefs and behaviors of our target in order to better connect to them.</h4>
                 <div id="personasContainer">
+                    <a class="userBackBtn" onclick="plusSlides(this, -1)">&#10094;</a>
                     <div class="userSlide fade">
                         <p class="numbertext">1/3</p>
-                        <iframe class='userPersona' style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBfqVvWHu67tCKx4oHGHQrP%2FDVSTY-User-Persona-2%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+                        <img class='userPersona' src="dvsty-imgs/User Persona 1.png">
                         <p class="userText">User 1</p>
                     </div>
                     <div class="userSlide fade">
                         <p class="numbertext">2/3</p>
-                        <iframe class='userPersona' style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FqpCVK1HuYkrbmZm0Z2Coad%2FDVSTY-User-Persona-1%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+                        <img class='userPersona' src="dvsty-imgs/User Persona 2.png">
                         <p class="userText">User 2</p>
                     </div>
                     <div class="userSlide fade">
                         <p class="numbertext">3/3</p>
-                        <iframe class='userPersona' style="border: 1px solid rgba(0, 0, 0, 0.1);"src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2ZOqK08Tt4g4Fwk0BWy59k%2FDVSTY-User-Persona-3%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+                        <img class='userPersona' src="dvsty-imgs/User Persona 3.png">
                         <p class="userText">User 3</p>
                     </div>
-                    <a class="user backBtn" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="user nextBtn" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="userNextBtn" onclick="plusSlides(this, 1)">&#10095;</a>
                 </div>
                 <div>
                     <span class="userDot" onclick="currentSlide(1)"></span>
                     <span class="userDot" onclick="currentSlide(2)"></span>
-                    <span class="userDot" onclick="currentSlide(3, this)"></span>
+                    <span class="userDot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
             
@@ -86,6 +94,7 @@
                 <h2>User Interface Development Process</h2>
                 <h4>The design for DVSTY's website needed to match the edgy and artsy vibe that can be seen inside the store, as well as on TikTok, Instagram, and Facebook. The website needed to be designed to strategically cater to the needs of the target audience, but it was necessary to start this process by narrowing down the basic elements the website needed to include.<br><br></h4>
                 <div id="mockupsContainer">
+                    <a class="mockupBackBtn" onclick="plusSlides(this, -1)">&#10094;</a>
                     <div class="mockupSlide fade">
                         <h3>Home Desktop Interface</h3>
                         <div class="mockupRow">
@@ -134,8 +143,8 @@
                             <img class='mobileMockup' src="dvsty-imgs/Contact -- iPhone 13 Pro Max - 4.png">
                         </div>
                     </div>
-                    <a class="backBtn" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="nextBtn" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    <a class="mockupNextBtn" onclick="plusSlides(this, 1)">&#10095;</a>
                 </div>
                 <div>
                     <span class="mockupDot" onclick="currentSlide(1)"></span>
@@ -143,29 +152,14 @@
                     <span class="mockupDot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
+            <div id="final">
+                <h2><a href='/'>View Final Project</a></h2>
+                <img id='moodboard' src="DVSTY Moodboard.png">
+            </div>
        </div>
 
-        <div id='navigation'>
-            <img id='logo' src="dvsty-imgs/Cropped Logo.png" />
-            <div id="links">
-                <li><a href='#ux-process'>UX Process</a></li>
-                <li><a href='#ui-process'>UI Process</a></li>
-                <li><a href='/'>Final Website</a></li>
-            </div>
-            <h3>Link to blakelydigitalco</h3>
-        </div>
-    </div>
+       
     <script src="process.js"></script>
 </body>
 <footer></footer>
 </html>
-<!-- 
-            <div id="message">
-                <h2>The Customer's Message</h2>
-                <h4>We want the customer to receive the following messages after completion of this project:</h4>
-                <ul>
-                    <li>DVSTY has the most unique collection of vintage and luxury items in the Boston area.</li>
-                    <li>This store is a must-see location for both locals and tourists.</li>
-                    <li>People of varying demographics are welcome to come to DVSTY to find pieces that speak to their true selves.</li>
-                </ul>
-            </div> -->

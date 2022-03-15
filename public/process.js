@@ -1,49 +1,39 @@
-window.onload = function () {
-  showSlides(
-    document.getElementsByClassName("userSlide"),
-    document.getElementsByClassName("userDot"),
-    1
-  );
-  showSlides(
-    document.getElementsByClassName("mockupSlide"),
-    document.getElementsByClassName("mockupDot"),
-    1
-  );
-};
-let slideshow;
-let dots;
+let slideIndex = 1;
+showSlides(document.getElementsByClassName("userSlide"), slideIndex);
+showSlides(document.getElementsByClassName("mockupSlide"), slideIndex);
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function currentSlide(n, el) {
-  alert(n);
-  if (el.className == "userDot") {
-    slideShow = document.getElementsByClassName("userSlide");
-    dots = document.getElementsByClassName("userDot");
+function whichSlideshow(parentId) {
+  if (parentId == "mockupsContainer") {
+    return document.getElementsByClassName("mockupSlide");
   } else {
-    slideshow = document.getElementsByClassName("mockupSlide");
-    dots = document.getElementsByClassName("mockupDot");
+    return document.getElementsByClassName("userSlide");
   }
-  showSlides(slideshow, dots, n);
 }
 
-function showSlides(slideshow, dots, n) {
-  let slideIndex;
+function plusSlides(e, n) {
+  let slideshow = whichSlideshow(e.parentNode.id);
+  showSlides(slideshow, (slideIndex += n));
+}
+function currentSlide(e, n) {
+  let slideshow = whichSlideshow(e.parentNode.id);
+  showSlides((slideIndex = n));
+}
+function showSlides(slideshow, n) {
   let i;
-  if (n > slideshow.length) {
+  let slides = slideshow;
+  let dots = document.getElementsByClassName("userDot");
+  if (n > slides.length) {
     slideIndex = 1;
-  } else if (n < 1) {
-    slideIndex = slideshow.length;
   }
-  for (i = 0; i < slideshow.length; i++) {
-    slideshow[i].style.display = "none";
+  if (n < 1) {
+    slideIndex = slide.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slideshow[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  alert("slide index" + slideIndex);
 }
